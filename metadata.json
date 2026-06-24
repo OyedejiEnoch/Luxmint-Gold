@@ -1,0 +1,8 @@
+{
+  "name": "Luxmint Gold",
+  "description": "Premium luxury gold accessories and investment brand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Centra No2", var(--font-body), sans-serif;
+  --font-serif: "BST Spyre", var(--font-heading), serif;
+  
+  /* Extracted palette from image */
+  --color-lux-light: #f1efea;
+  --color-lux-cream: #e6dfd1;
+  --color-lux-sand:  #dcd4c6;
+  --color-lux-warm:  #bca78e;
+  --color-lux-taupe: #9e826b;
+  --color-lux-brown-light: #6f543e;
+  --color-lux-brown: #5a3c20;
+  --color-lux-espresso: #2e1a0f;
+  --color-lux-charcoal: #201c18;
+  --color-lux-dark: #1a1614;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-lux-light text-lux-dark;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal;
+  }
+}
+
+/* Hide scrollbars globally or via class */
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+}
+.scrollbar-none {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
