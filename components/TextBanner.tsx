@@ -14,22 +14,22 @@ export default function TextBanner() {
       >
         {/* Subtle Luxury Subheading */}
         <span className="block text-[10px] uppercase tracking-[0.25em] text-lux-taupe mb-6 font-semibold">
-          THE LUXMINT COUNSEL • SERVICES
+          THE LUXMINT WAY
         </span>
 
-        {/* Elegant Gold Leaf Divider (Very restrained - as requested for Strathberry style) */}
+        {/* Elegant Gold Leaf Divider */}
         <div className="w-12 h-[1px] bg-lux-warm/40 mx-auto mb-10" />
 
         {/* Main Editorial Text */}
         <p className="font-serif text-[18px] md:text-[22px] lg:text-[25px] leading-[1.8] md:leading-[1.95] text-lux-dark/95 font-light">
-          At our private salon, our advisors are at your disposal to assist in selecting pieces that align with both your personal style and your asset objectives. Our bespoke recommendations will guide you through the precise karat weights, traditional Nigerian smithing heritage, and proper preservation of your Luxmint Gold heirloom.
+          Not sure where to start? Tell us your style and we&rsquo;ll help you find it. A quick message on WhatsApp connects you with us directly &mdash; for honest advice on the right chain, the perfect gift, or how to layer your pieces. Chosen with care, delivered to your door anywhere in Nigeria.
         </p>
 
         {/* Fine-print details */}
         <div className="mt-10 flex items-center justify-center gap-6 text-[9px] uppercase tracking-[0.2em] text-lux-taupe">
-          <span>PRIVATE SALON VISITS</span>
+          <span>PERSONAL STYLING HELP</span>
           <span className="w-1.5 h-1.5 rounded-full bg-lux-warm/30" />
-          <span>PORTFOLIO CONSULTATIONS</span>
+          <span>NATIONWIDE DELIVERY</span>
         </div>
       </motion.div>
     </section>

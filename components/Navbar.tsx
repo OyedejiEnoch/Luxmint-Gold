@@ -104,12 +104,12 @@ export default function Navbar() {
             )}
           </button>
 
-          <Link href="#bespoke" className="hover:text-black transition-colors duration-300 pb-1">
-            Bespoke
+          <Link href="#book" className="hover:text-black transition-colors duration-300 pb-1">
+            Styling
           </Link>
-          
+
           <Link href="#world" className="hover:text-black transition-colors duration-300 pb-1">
-            Our World
+            Our Story
           </Link>
         </nav>
 
@@ -216,50 +216,52 @@ export default function Navbar() {
                 </h4>
                 <ul className="space-y-3 text-[11px] uppercase tracking-[0.15em] text-lux-dark/80">
                   <li><Link href="/shop/necklaces" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Gold Necklaces</Link></li>
-                  <li><Link href="/shop/chains" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Investment Chains</Link></li>
-                  <li><Link href="/shop/pendants" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Crafted Pendants</Link></li>
+                  <li><Link href="/shop/chains" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Gold Chains</Link></li>
+                  <li><Link href="/shop/pendants" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Pendants</Link></li>
                   <li><Link href="/shop/rings" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Signature Rings</Link></li>
-                  <li><Link href="/shop/bracelets" className="hover:text-lux-brown transition-colors font-medium" onClick={() => setActiveMegaMenu(null)}>Bespoke Bracelets</Link></li>
+                  <li><Link href="/shop/bracelets" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Bracelets &amp; Cuffs</Link></li>
+                  <li><Link href="/shop/earrings" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Earrings</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-[10px] tracking-[0.25em] font-semibold text-black mb-4 uppercase">
-                  By Investment
+                  Shop The Edit
                 </h4>
                 <ul className="space-y-3 text-[11px] uppercase tracking-[0.15em] text-lux-dark/80">
-                  <li><Link href="#bullion" className="hover:text-lux-brown transition-colors">24K Gold Bullion</Link></li>
-                  <li><Link href="#sovereigns" className="hover:text-lux-brown transition-colors">Investment Sovereigns</Link></li>
-                  <li><Link href="#custom" className="hover:text-lux-brown transition-colors font-medium">Bespoke Advisory</Link></li>
-                  <li><Link href="#vault" className="hover:text-lux-brown transition-colors">Safe Vault Storage</Link></li>
+                  <li><Link href="#shop" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>New Arrivals</Link></li>
+                  <li><Link href="#shop" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Best Sellers</Link></li>
+                  <li><Link href="#shop" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Gift Ideas</Link></li>
+                  <li><Link href="#shop" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Layering Sets</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-[10px] tracking-[0.25em] font-semibold text-black mb-4 uppercase">
-                  Our Story
+                  Discover
                 </h4>
                 <ul className="space-y-3 text-[11px] uppercase tracking-[0.15em] text-lux-dark/80">
-                  <li><Link href="#craftsmanship" className="hover:text-lux-brown transition-colors">The Craft of Lagos</Link></li>
-                  <li><Link href="#philosophy" className="hover:text-lux-brown transition-colors">Legacy Principles</Link></li>
-                  <li><Link href="#care" className="hover:text-lux-brown transition-colors">Sovereign Care Guide</Link></li>
+                  <li><Link href="#world" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Our Story</Link></li>
+                  <li><Link href="#advisory" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Why Luxmint</Link></li>
+                  <li><Link href="#care" className="hover:text-lux-brown transition-colors" onClick={() => setActiveMegaMenu(null)}>Gold Care Guide</Link></li>
                 </ul>
               </div>
 
               <div className="bg-lux-light p-6 flex flex-col justify-between border border-lux-sand/20">
                 <div>
                   <h4 className="text-[10px] tracking-[0.2em] font-semibold text-lux-charcoal uppercase mb-2">
-                    Private Viewing
+                    Need a Hand?
                   </h4>
                   <p className="text-[11px] text-lux-taupe normal-case tracking-normal leading-relaxed">
-                    Schedule a secure private viewing of our high-carat investment pieces at our Lagos salon.
+                    Tell us what you love and we&rsquo;ll help you find it &mdash; free styling help over WhatsApp.
                   </p>
                 </div>
-                <Link 
-                  href="#book" 
+                <Link
+                  href="#book"
+                  onClick={() => setActiveMegaMenu(null)}
                   className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] font-semibold text-lux-brown hover:text-lux-espresso mt-4"
                 >
-                  <span>REQUEST AN AUDIENCE</span>
+                  <span>BOOK A STYLING SESSION</span>
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -314,23 +316,27 @@ export default function Navbar() {
                       >
                         <Link href="/shop/necklaces" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
                           <span>Gold Necklaces</span>
-                          <span className="text-[8px] font-mono text-lux-taupe">18K & 22K</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Layering</span>
                         </Link>
                         <Link href="/shop/chains" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          <span>Investment Chains</span>
-                          <span className="text-[8px] font-mono text-lux-taupe">Solid Bullion</span>
+                          <span>Gold Chains</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Statement</span>
                         </Link>
                         <Link href="/shop/pendants" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          <span>Crafted Pendants</span>
-                          <span className="text-[8px] font-mono text-lux-taupe">Hand-forged</span>
+                          <span>Pendants</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Everyday</span>
                         </Link>
                         <Link href="/shop/rings" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
                           <span>Signature Rings</span>
-                          <span className="text-[8px] font-mono text-lux-taupe">Bezel & Signet</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Signet &amp; Stack</span>
                         </Link>
-                        <Link href="/shop/bracelets" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black font-medium">
-                          <span>Bespoke Bracelets</span>
-                          <span className="text-[8px] font-mono text-lux-taupe">Rigid Cuffs</span>
+                        <Link href="/shop/bracelets" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          <span>Bracelets &amp; Cuffs</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Cuffs</span>
+                        </Link>
+                        <Link href="/shop/earrings" onClick={() => setIsOpen(false)} className="flex items-center justify-between text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          <span>Earrings</span>
+                          <span className="text-[8px] font-mono text-lux-taupe">Hoops &amp; Studs</span>
                         </Link>
                       </motion.div>
                     )}
@@ -361,17 +367,17 @@ export default function Navbar() {
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                         className="overflow-hidden pl-3 ml-1 mt-3 space-y-3.5 border-l border-lux-sand/50"
                       >
-                        <Link href="#bullion" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          24K Gold Bullion
+                        <Link href="#shop" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          New Arrivals
                         </Link>
-                        <Link href="#sovereigns" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          Investment Sovereigns
+                        <Link href="#shop" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          Best Sellers
                         </Link>
-                        <Link href="#custom" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          Bespoke Advisory
+                        <Link href="#shop" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          Gift Ideas
                         </Link>
-                        <Link href="#vault" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
-                          Safe Vault Storage
+                        <Link href="#shop" onClick={() => setIsOpen(false)} className="block text-[11px] uppercase tracking-[0.15em] text-lux-dark/80 hover:text-black">
+                          Layering Sets
                         </Link>
                       </motion.div>
                     )}
@@ -380,24 +386,24 @@ export default function Navbar() {
 
                 {/* 3. Bespoke Direct Link */}
                 <motion.div variants={menuItemVariants} className="border-b border-lux-sand/30 pb-3.5">
-                  <Link 
-                    href="#bespoke" 
+                  <Link
+                    href="#book"
                     onClick={() => setIsOpen(false)}
                     className="flex justify-between items-center py-1 text-[13px] uppercase tracking-[0.18em] font-medium text-lux-dark hover:text-lux-warm transition-colors"
                   >
-                    <span>Bespoke Atelier</span>
+                    <span>Styling Session</span>
                     <ArrowRight className="w-3.5 h-3.5 stroke-[1] text-lux-taupe" />
                   </Link>
                 </motion.div>
 
                 {/* 4. Our World Direct Link */}
                 <motion.div variants={menuItemVariants} className="border-b border-lux-sand/30 pb-3.5">
-                  <Link 
-                    href="#world" 
+                  <Link
+                    href="#world"
                     onClick={() => setIsOpen(false)}
                     className="flex justify-between items-center py-1 text-[13px] uppercase tracking-[0.18em] font-medium text-lux-dark hover:text-lux-warm transition-colors"
                   >
-                    <span>Our World</span>
+                    <span>Our Story</span>
                     <ArrowRight className="w-3.5 h-3.5 stroke-[1] text-lux-taupe" />
                   </Link>
                 </motion.div>
@@ -407,45 +413,45 @@ export default function Navbar() {
               {/* Lower Showroom details and actions */}
               <div className="space-y-6 mt-8">
                 
-                {/* Premium Location Detail */}
+                {/* Delivery Detail */}
                 <div className="bg-white/60 border border-lux-sand/30 p-4 rounded-sm space-y-2">
                   <div className="flex items-center gap-2 text-lux-dark">
                     <MapPin className="w-3.5 h-3.5 text-lux-warm stroke-[1.5]" />
-                    <span className="text-[8px] font-mono tracking-[0.2em] font-semibold uppercase">LAGOS VICTORIA ISLAND SALON</span>
+                    <span className="text-[8px] font-mono tracking-[0.2em] font-semibold uppercase">NATIONWIDE DELIVERY · NIGERIA</span>
                   </div>
                   <p className="text-[10px] text-lux-taupe leading-relaxed pl-5 font-light">
-                    Visits strictly coordinated by pre-booked private secure invitation. Safe transfers verified in-house.
+                    Shop online and order on WhatsApp. Every piece is hand-checked and carefully delivered to your door.
                   </p>
                 </div>
 
                 {/* Secure Contacts Grid */}
                 <div className="flex justify-between items-center border-t border-b border-lux-sand/20 py-4 px-1">
-                  <a href="tel:+234800LUXMINT" className="flex items-center gap-2 text-[9px] uppercase tracking-[0.15em] text-lux-dark hover:text-lux-warm transition-colors">
+                  <a href="https://wa.me/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[9px] uppercase tracking-[0.15em] text-lux-dark hover:text-lux-warm transition-colors">
                     <Phone className="w-3.5 h-3.5 stroke-[1.2]" />
-                    <span>LIAISON</span>
+                    <span>WHATSAPP</span>
                   </a>
-                  <a href="mailto:concierge@luxmint.gold" className="flex items-center gap-2 text-[9px] uppercase tracking-[0.15em] text-lux-dark hover:text-lux-warm transition-colors">
+                  <a href="mailto:hello@luxmint.gold" className="flex items-center gap-2 text-[9px] uppercase tracking-[0.15em] text-lux-dark hover:text-lux-warm transition-colors">
                     <Mail className="w-3.5 h-3.5 stroke-[1.2]" />
-                    <span>SECURE MAIL</span>
+                    <span>EMAIL</span>
                   </a>
                   <a href="https://instagram.com/luxmintgold" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[9px] uppercase tracking-[0.15em] text-lux-dark hover:text-lux-warm transition-colors">
                     <Instagram className="w-3.5 h-3.5 stroke-[1.2]" />
-                    <span>JOURNAL</span>
+                    <span>INSTAGRAM</span>
                   </a>
                 </div>
 
                 {/* Call to Action Button */}
                 <div className="space-y-3">
-                  <Link 
+                  <Link
                     href="#book"
                     onClick={() => setIsOpen(false)}
                     className="w-full py-4 bg-lux-dark text-white hover:bg-lux-espresso transition-all rounded-sm text-center text-[10px] tracking-[0.25em] font-medium block uppercase border border-lux-dark"
                   >
-                    Schedule Salon Viewing
+                    Book a Styling Session
                   </Link>
                   <div className="flex justify-center items-center gap-1.5 text-[8px] tracking-[0.15em] text-lux-taupe uppercase text-center">
                     <ShieldCheck className="w-3 h-3 text-lux-warm" />
-                    <span>Certified Hallmark Assay Safeguards</span>
+                    <span>Hand-checked Quality · Nationwide Delivery</span>
                   </div>
                 </div>
 

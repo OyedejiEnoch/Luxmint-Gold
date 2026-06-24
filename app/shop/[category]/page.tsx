@@ -40,7 +40,7 @@ const INVENTORY: Record<string, Array<{
       material: '18K Gold & Dalmatian Jasper',
       price: 360000,
       priceFormatted: '₦360,000 NGN',
-      image: 'https://i.pinimg.com/736x/2f/39/4d/2f394020289fc6c99b26035e95ab82a4.jpg',
+      image: 'https://i.pinimg.com/736x/8e/d6/fb/8ed6fb5b53fd8b893e8bf92af1a0497c.jpg',
       badge: 'NEW',
       description: 'Handcrafted hollow-form 18-karat hoops supporting a detachable pair of hand-cut Dalmatian Jasper rings. An asymmetric masterpiece inspired by modern organic shapes.'
     },
@@ -697,7 +697,7 @@ export default function CategoryPage() {
             </div>
 
             {/* Right Product count & quick sort */}
-            <div className="flex items-center gap-6 text-[10px] uppercase tracking-[0.15em] text-lux-taupe">
+            {/* <div className="flex items-center gap-6 text-[10px] uppercase tracking-[0.15em] text-lux-taupe">
               <span className="font-mono">{processedItems.length} Products</span>
               
               <div className="relative group/sort hidden sm:block">
@@ -722,7 +722,7 @@ export default function CategoryPage() {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </section>

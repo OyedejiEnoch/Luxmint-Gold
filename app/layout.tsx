@@ -20,8 +20,8 @@ const bodyFont = Jost({
 });
 
 export const metadata: Metadata = {
-  title: 'Luxmint Gold | Premium Luxury Gold',
-  description: 'Premium gold accessories and luxury investment brand based in Nigeria.',
+  title: 'Luxmint Gold | Curated Gold Accessories',
+  description: 'A Nigerian house of curated gold accessories — chains, pendants, rings and more, hand-picked for everyday elegance and delivered nationwide.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

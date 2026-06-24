@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
-import { Send, MapPin, Sparkles, Check } from 'lucide-react';
+import { Send, Instagram, MessageCircle, Check } from 'lucide-react';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -23,7 +23,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-[#111111] text-white/90 border-t border-white/5 py-20 lg:py-28 overflow-hidden relative">
+    <footer className="w-full bg-[#000000] text-white/90 border-t border-white/5 py-20 lg:py-28 overflow-hidden relative">
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-lux-sand/20 to-transparent" />
       
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
@@ -35,12 +35,12 @@ export default function Footer() {
               L U X M I N T
             </Link>
             <p className="text-[12px] text-white/50 leading-relaxed font-light max-w-sm">
-              The premier sovereign house of gold masterpieces and custodian services in West Africa. Handcrafted in Lagos, curated for your lifestyle and your enduring heritage.
+              A Nigerian house of curated gold accessories &mdash; chains, pendants, rings and more, hand-picked for everyday elegance and delivered across Nigeria.
             </p>
             <div className="pt-2 flex items-center gap-4 text-white/40 text-[10px] uppercase tracking-[0.15em]">
-              <span>Est. 2018</span>
+              <span>Online · Nigeria</span>
               <span className="w-1 h-1 rounded-full bg-lux-sand/30" />
-              <span>Lagos Showroom</span>
+              <span>Nationwide Delivery</span>
             </div>
           </div>
 
@@ -50,32 +50,36 @@ export default function Footer() {
               The House
             </h4>
             <ul className="space-y-3 text-[11px] uppercase tracking-[0.15em] text-white/60">
-              <li><Link href="#shop" className="hover:text-lux-sand transition-colors duration-300">Gold Offerings</Link></li>
-              <li><Link href="#world" className="hover:text-lux-sand transition-colors duration-300">The Atelier</Link></li>
-              <li><Link href="#advisory" className="hover:text-lux-sand transition-colors duration-300">Wealth Advisory</Link></li>
-              <li><Link href="#book" className="hover:text-lux-sand transition-colors duration-300">Secure Viewing</Link></li>
+              <li><Link href="#shop" className="hover:text-lux-sand transition-colors duration-300">Shop the Collection</Link></li>
+              <li><Link href="#world" className="hover:text-lux-sand transition-colors duration-300">Our Story</Link></li>
+              <li><Link href="#advisory" className="hover:text-lux-sand transition-colors duration-300">Why Luxmint</Link></li>
+              <li><Link href="#book" className="hover:text-lux-sand transition-colors duration-300">Book a Styling Session</Link></li>
             </ul>
           </div>
 
           {/* Links Col 2 */}
           <div className="lg:col-span-2 space-y-4">
             <h4 className="text-[10px] tracking-[0.2em] font-semibold text-lux-sand uppercase">
-              Showrooms
+              Reach Us
             </h4>
             <ul className="space-y-4 text-[11px] font-light leading-relaxed text-white/60">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-3.5 h-3.5 mt-0.5 text-lux-sand/75 shrink-0 stroke-[1.2]" />
-                <div>
-                  <span className="font-medium text-white uppercase block tracking-wider text-[9px]">Lagos Studio</span>
-                  <span className="text-[10px] tracking-wide text-white/45">Victoria Island, Lagos, NG</span>
-                </div>
+              <li>
+                <a href="https://wa.me/" target="_blank" rel="noreferrer" className="flex items-start gap-2.5 group">
+                  <MessageCircle className="w-3.5 h-3.5 mt-0.5 text-lux-sand/75 shrink-0 stroke-[1.2]" />
+                  <div>
+                    <span className="font-medium text-white uppercase block tracking-wider text-[9px] group-hover:text-lux-sand transition-colors">WhatsApp</span>
+                    <span className="text-[10px] tracking-wide text-white/45">Orders &amp; styling help</span>
+                  </div>
+                </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-3.5 h-3.5 mt-0.5 text-lux-sand/75 shrink-0 stroke-[1.2]" />
-                <div>
-                  <span className="font-medium text-white uppercase block tracking-wider text-[9px]">Geneva Vaults</span>
-                  <span className="text-[10px] tracking-wide text-white/45">Rue du Rhône, Switzerland</span>
-                </div>
+              <li>
+                <a href="https://instagram.com/luxmintgold" target="_blank" rel="noreferrer" className="flex items-start gap-2.5 group">
+                  <Instagram className="w-3.5 h-3.5 mt-0.5 text-lux-sand/75 shrink-0 stroke-[1.2]" />
+                  <div>
+                    <span className="font-medium text-white uppercase block tracking-wider text-[9px] group-hover:text-lux-sand transition-colors">Instagram</span>
+                    <span className="text-[10px] tracking-wide text-white/45">@luxmintgold</span>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -83,10 +87,10 @@ export default function Footer() {
           {/* Newsletter Col */}
           <div className="lg:col-span-4 space-y-6">
             <h4 className="text-[10px] tracking-[0.25em] font-semibold text-lux-sand uppercase">
-              Patron Ledger
+              Join the List
             </h4>
             <p className="text-[11px] text-white/50 leading-relaxed font-light">
-              Receive private notifications regarding direct 24K bullion allocations, bespoke seasonal viewings, and heritage jewelry collection events.
+              Be first to see new arrivals, restocks and seasonal gifting edits &mdash; plus the occasional treat for subscribers only.
             </p>
 
             <AnimatePresence mode="wait">
@@ -137,10 +141,10 @@ export default function Footer() {
 
         {/* Bottom Legal bar */}
         <div className="border-t border-white/5 mt-16 lg:mt-24 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[9px] uppercase tracking-[0.2em] text-white/45 font-mono">
-          <span>© 2026 LUXMINT HOUSE OF GOLD. ALL RIGHTS RESERVED.</span>
+          <span>© 2026 LUXMINT GOLD. ALL RIGHTS RESERVED.</span>
           <div className="flex gap-6">
-            <Link href="#privacy" className="hover:text-white transition-colors">Privacy Ledger</Link>
-            <Link href="#terms" className="hover:text-white transition-colors">Sovereign Terms</Link>
+            <Link href="#privacy" className="hover:text-white transition-colors">Privacy</Link>
+            <Link href="#terms" className="hover:text-white transition-colors">Terms</Link>
           </div>
         </div>
 

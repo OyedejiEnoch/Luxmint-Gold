@@ -4,7 +4,7 @@ import Offerings from "@/components/Offerings";
 import CategoriesGrid from "@/components/CategoriesGrid";
 import Atelier from "@/components/Atelier";
 import Advisory from "@/components/Advisory";
-import AccessoryGuide from "@/components/AccessoryGuide";
+// import AccessoryGuide from "@/components/AccessoryGuide";
 import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
 
@@ -17,7 +17,7 @@ export default function Home() {
       <CategoriesGrid />
       <Atelier />
       <Advisory />
-      <AccessoryGuide />
+      {/* <AccessoryGuide /> */}
       <Booking />
       <Footer />
     </main>

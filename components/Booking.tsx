@@ -12,11 +12,11 @@ const TIME_SLOTS = [
 ];
 
 const INTEREST_TYPES = [
-  "Solid 22K Investment Chains",
-  "Signature Signet & Dress Rings",
-  "Heavy Atelier Cuff Bracelets",
-  "Sovereign Bullion Allocation",
-  "Custom Bridal Atelier Consult"
+  "Gold Chains & Necklaces",
+  "Rings",
+  "Bracelets & Cuffs",
+  "Earrings",
+  "A Gift for Someone"
 ];
 
 // Generate next 5 business days beautifully
@@ -66,11 +66,11 @@ export default function Booking() {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
-    if (!fullName.trim()) newErrors.name = "Name is required.";
+    if (!fullName.trim()) newErrors.name = "Please tell us your name.";
     if (!email.trim() || !email.includes('@')) newErrors.email = "A valid email is required.";
-    if (!phone.trim()) newErrors.phone = "Phone number is required for secure courier coordination.";
-    if (!selectedDate) newErrors.date = "Please select an appointment date.";
-    if (!selectedTime) newErrors.time = "Please choose a preferred time slot.";
+    if (!phone.trim()) newErrors.phone = "We need your WhatsApp number to reach you.";
+    if (!selectedDate) newErrors.date = "Please pick a day that works for you.";
+    if (!selectedTime) newErrors.time = "Please choose a preferred time.";
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -97,29 +97,29 @@ export default function Booking() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <span className="block text-[9px] tracking-[0.3em] text-black uppercase mb-6 font-semibold">
-                REQUEST AN AUDIENCE • SALON
+                BOOK A STYLING SESSION
               </span>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-lux-dark mb-8 font-normal tracking-tight">
-                Secure a private <br /> viewing at our <i className="font-serif font-light text-black">Lagos Salon</i>.
+                Let&rsquo;s find the <br /> piece that&rsquo;s <i className="font-serif font-light text-black">you</i>.
               </h2>
               <div className="w-12 h-[1px] bg-black/20 mb-8" />
               <p className="text-black/85 text-[15px] leading-[1.8] font-light mb-6">
-                To maintain complete discretion and optimal security, visits to our Victoria Island showroom are strictly by advance appointment. Our private registrars coordinate safe courier transfers, individual advisory viewings, and confidential estate portfolio consultancies.
+                Book a free, no-pressure styling chat over WhatsApp. We&rsquo;ll help you choose the right chain, find the perfect gift, or put together a look you&rsquo;ll wear on repeat &mdash; from the comfort of your phone.
               </p>
               <p className="text-black/80 text-[15px] leading-[1.8] font-light mb-10">
-                Please complete the encrypted request ledger. An exclusive liaison from our Lagos counsel will reach out within two hours to formalize your private invitation.
+                Pick a day and time below and leave your details. We&rsquo;ll message you on WhatsApp to confirm and get started.
               </p>
             </div>
 
-            {/* Secure Badges */}
+            {/* Trust Badges */}
             <div className="space-y-4 border-t border-lux-sand/20 pt-8 mt-4">
               <div className="flex items-center gap-3 text-lux-dark">
                 <ShieldCheck className="w-4 h-4 stroke-[1.5] text-black" />
-                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">MILITARY-GRADE VAULT DISCRETION</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">HAND-CHECKED FOR QUALITY</span>
               </div>
               <div className="flex items-center gap-3 text-lux-dark">
                 <Star className="w-4 h-4 stroke-[1.5] text-black" />
-                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">CERTIFIED ASSAY OFFICERS</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-medium">NATIONWIDE DELIVERY · NIGERIA</span>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ export default function Booking() {
                     {/* Step 1: Select Interest */}
                     <div className="space-y-3">
                       <label className="block text-[9px] uppercase tracking-[0.25em] font-semibold text-lux-taupe">
-                        01 / Select Primary Metal Interest
+                        01 / What are you shopping for?
                       </label>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {INTEREST_TYPES.map((type) => (
@@ -164,7 +164,7 @@ export default function Booking() {
                     {/* Step 2: Select Date & Time (Custom interactive Calendar) */}
                     <div className="space-y-4">
                       <label className="block text-[9px] uppercase tracking-[0.25em] font-semibold text-lux-taupe">
-                        02 / Schedule Showroom Appointment Slot
+                        02 / Pick a time for your WhatsApp chat
                       </label>
                       
                       {/* Date list */}
@@ -230,7 +230,7 @@ export default function Booking() {
                     {/* Step 3: Patron Credentials */}
                     <div className="space-y-4">
                       <label className="block text-[9px] uppercase tracking-[0.25em] font-semibold text-lux-taupe">
-                        03 / Enter Patron Credentials
+                        03 / Your details
                       </label>
                       
                       <div className="space-y-3.5">
@@ -239,7 +239,7 @@ export default function Booking() {
                           <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-lux-taupe/60 stroke-[1.2]" />
                           <input 
                             type="text" 
-                            placeholder="FULL PATRON NAME"
+                            placeholder="YOUR NAME"
                             value={fullName}
                             onChange={(e) => {
                               setFullName(e.target.value);
@@ -256,7 +256,7 @@ export default function Booking() {
                           <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-lux-taupe/60 stroke-[1.2]" />
                           <input 
                             type="email" 
-                            placeholder="CONFIDENTIAL EMAIL ADDRESS"
+                            placeholder="EMAIL ADDRESS"
                             value={email}
                             onChange={(e) => {
                               setEmail(e.target.value);
@@ -273,7 +273,7 @@ export default function Booking() {
                           <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-lux-taupe/60 stroke-[1.2]" />
                           <input 
                             type="tel" 
-                            placeholder="SECURE CONTACT NUMBER (WHATSAPP)"
+                            placeholder="WHATSAPP NUMBER"
                             value={phone}
                             onChange={(e) => {
                               setPhone(e.target.value);
@@ -297,7 +297,7 @@ export default function Booking() {
                       {isSubmitting ? (
                         <div className="w-4 h-4 border-2 border-white/35 border-t-white rounded-full animate-spin" />
                       ) : (
-                        <span>TRANSMIT SALON REQUEST</span>
+                        <span>BOOK MY STYLING SESSION</span>
                       )}
                     </button>
                   </motion.form>
@@ -314,29 +314,29 @@ export default function Booking() {
                     </div>
 
                     <span className="block text-[9px] tracking-[0.3em] text-black uppercase mb-4 font-semibold">
-                      REQUEST TRANSMITTED SECURELY
+                      YOU&rsquo;RE BOOKED IN
                     </span>
 
                     <h3 className="font-serif text-2xl md:text-3xl text-lux-dark mb-4 font-normal">
-                      Welcome, Patron <span className="font-serif font-light italic">{fullName}</span>.
+                      Thank you, <span className="font-serif font-light italic">{fullName}</span>.
                     </h3>
 
                     <p className="text-black text-[14px] leading-[1.8] font-light max-w-md mx-auto mb-8">
-                      Your viewing credentials have been allocated for <b className="font-medium text-lux-dark">{selectedDate}</b> at <b className="font-medium text-lux-dark">{selectedTime}</b>. Our senior showroom registrar will contact your secure liaison shortly via the provided channel to finalize logistics.
+                      Your styling chat is pencilled in for <b className="font-medium text-lux-dark">{selectedDate}</b> at <b className="font-medium text-lux-dark">{selectedTime}</b>. We&rsquo;ll send you a message on WhatsApp shortly to confirm and say hello.
                     </p>
 
                     <div className="w-full bg-white border border-lux-sand/15 p-5 text-left text-[11px] space-y-2 max-w-sm">
                       <div className="flex justify-between font-mono text-[9px]">
-                        <span className="text-lux-taupe">LIAISON DEPT:</span>
-                        <span className="text-lux-dark">LAGOS VII COURIER</span>
+                        <span className="text-lux-taupe">WE&rsquo;LL REACH YOU ON:</span>
+                        <span className="text-lux-dark">WHATSAPP</span>
                       </div>
                       <div className="flex justify-between font-mono text-[9px]">
-                        <span className="text-lux-taupe">INTEREST SEGMENT:</span>
+                        <span className="text-lux-taupe">SHOPPING FOR:</span>
                         <span className="text-lux-dark uppercase">{selectedInterest}</span>
                       </div>
                       <div className="flex justify-between font-mono text-[9px]">
                         <span className="text-lux-taupe">STATUS:</span>
-                        <span className="text-emerald-700 font-semibold uppercase">PROVISIONAL APPROVAL</span>
+                        <span className="text-emerald-700 font-semibold uppercase">CONFIRMED</span>
                       </div>
                     </div>
 
@@ -351,7 +351,7 @@ export default function Booking() {
                       }}
                       className="mt-10 relative text-[9px] uppercase tracking-[0.2em] text-black hover:text-lux-espresso transition-colors font-semibold pb-1 border-b border-black/20"
                     >
-                      Return to Showroom
+                      Back to the collection
                     </button>
                   </motion.div>
                 )}

@@ -1,26 +1,26 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Shield, TrendingUp, Coins } from 'lucide-react';
+import { Gem, Truck, MessageCircle } from 'lucide-react';
 
 const COUNSEL_SERVICES = [
   {
-    icon: Coins,
-    label: '01 / ASSET ACQUISITION',
-    title: '24K Sovereign Bullion',
-    description: 'Direct procurement of physical, 99.99% pure gold bars. Hand-stamped and certified by the Luxmint Treasury with a secure assay mark, serving as the ultimate store of generational value.',
+    icon: Gem,
+    label: '01 / QUALITY YOU CAN SEE',
+    title: 'Hand-checked pieces',
+    description: 'Every order is looked over before it ships — for finish, shine and the little details that make gold feel special. If it wouldn’t pass our own eye, it doesn’t go out.',
   },
   {
-    icon: Shield,
-    label: '02 / CUSTODIAN SERVICES',
-    title: 'Sovereign Safe Storage',
-    description: 'Fully-insured, climate-regulated private vault facilities situated in Victoria Island, Lagos, and Geneva, Switzerland. Subject to regular third-party audits with instantaneous client verification.',
+    icon: Truck,
+    label: '02 / DELIVERED TO YOU',
+    title: 'Nationwide delivery',
+    description: 'We deliver carefully right across Nigeria, wrapped and ready — whether it’s a treat for yourself or a gift on its way to someone you love.',
   },
   {
-    icon: TrendingUp,
-    label: '03 / ESTATE ADVISORY',
-    title: 'Bespoke Family Portfolios',
-    description: 'Bespoke consultancies to structuralize private family wealth through high-grade physical gold. Seamless transition protocols designed to pass wealth securely down through generations.',
+    icon: MessageCircle,
+    label: '03 / HERE TO HELP',
+    title: 'Style help on WhatsApp',
+    description: 'Tell us what you’re after and we’ll guide you — sizing, layering, gifting ideas. A quick message is all it takes to start.',
   }
 ];
 
@@ -35,14 +35,14 @@ export default function Advisory() {
         {/* Header */}
         <div className="max-w-[720px] mx-auto text-center mb-20 md:mb-28">
           <span className="block text-[9px] tracking-[0.3em] text-lux-sand uppercase mb-5 font-semibold">
-            THE SOVEREIGN COUNSEL • WEALTH
+            WHY LUXMINT
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] text-white mb-6 font-normal tracking-tight">
-            Protecting your hard work with <i className="font-serif font-light text-lux-sand">indestructible</i> assets.
+            Beautiful gold, made <i className="font-serif font-light text-lux-sand">effortless</i> to own.
           </h2>
           <div className="w-12 h-[1px] bg-lux-sand/30 mx-auto my-6" />
           <p className="text-white/60 text-[13px] md:text-[14px] leading-relaxed font-light max-w-lg mx-auto">
-            Gold is not merely an ornament. It is the only currency that has outlived every empire. We help you hold it securely.
+            No queues, no pressure — just gorgeous pieces, honest advice, and delivery to your door anywhere in Nigeria.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function Advisory() {
                 {/* Learn More link with micro line */}
                 <div className="mt-12 pt-6 border-t border-white/5 flex items-center justify-between">
                   <span className="text-[9px] uppercase tracking-[0.2em] text-white/45 group-hover:text-lux-sand transition-colors">
-                    Treasury Protocol
+                    The Luxmint Promise
                   </span>
                   <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-lux-sand transition-colors" />
                 </div>

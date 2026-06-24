@@ -7,33 +7,33 @@ import Link from 'next/link';
 const CATEGORIES = [
   {
     id: 'chains',
-    eyebrow: 'SOLID 22K HEAVY LINKS',
-    title: 'Investment Chains',
-    desc: 'Lagos-stamped statement links and liquid weight chains.',
+    eyebrow: 'STATEMENT & LAYERING LINKS',
+    title: 'Gold Chains',
+    desc: 'From delicate everyday links to bold statement chains.',
     image: 'https://i.pinimg.com/1200x/c2/4f/11/c24f1185a20006322bec7f5b93c64e44.jpg',
     link: '/shop/chains',
   },
   {
     id: 'earrings',
-    eyebrow: 'ARCHITECTURAL HOOPS & STUDS',
+    eyebrow: 'HOOPS, STUDS & CUFFS',
     title: 'Fine Earrings',
-    desc: 'Bespoke pairs, ear cuffs, and brilliant-cut hoops.',
+    desc: 'Hoops, ear cuffs and studs for every occasion.',
     image: 'https://i.pinimg.com/736x/2f/39/4d/2f394d20289fc6c99b26035e95ab82a4.jpg',
     link: '/shop/earrings',
   },
   {
     id: 'pendants',
-    eyebrow: 'HAND-CAST HEIRLOOMS',
-    title: 'Sovereign Pendants',
-    desc: 'Traditional Nigerian motifs infused with modern geometry.',
+    eyebrow: 'EVERYDAY ICONS',
+    title: 'Pendants',
+    desc: 'Meaningful pieces to wear close, every single day.',
     image: 'https://i.pinimg.com/1200x/54/12/33/5412332151911548de612554a8fa5be2.jpg',
     link: '/shop/pendants',
   },
   {
     id: 'rings',
-    eyebrow: 'BESPOKE IMMORTAL BANDS',
+    eyebrow: 'SIGNETS & STACKING BANDS',
     title: 'Signature Rings',
-    desc: 'Heavy physical signets and polished gold bullion rings.',
+    desc: 'Polished signets and slim bands made to stack.',
     image: 'https://i.pinimg.com/736x/a4/c3/5e/a4c35eb64e16357b030f984f0dfaba09.jpg',
     link: '/shop/rings',
   }
@@ -47,14 +47,14 @@ export default function CategoriesGrid() {
         {/* Section Heading */}
         <div className="max-w-[720px] mx-auto text-center mb-16 md:mb-24">
           <span className="block text-[9px] tracking-[0.3em] text-black uppercase mb-4 font-semibold">
-            THE HOUSE COLLECTIONS • ATELIER ARCHIVE
+            SHOP BY CATEGORY
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] text-lux-dark mb-6 font-normal tracking-tight">
-            Shop from our <i className="font-serif font-light text-black">various</i> categories.
+            Find your <i className="font-serif font-light text-black">forever</i> piece.
           </h2>
           <div className="w-12 h-[1px] bg-black/20 mx-auto my-6" />
           <p className="text-black text-[14px] md:text-[15px] leading-relaxed font-light max-w-lg mx-auto">
-            Discover bespoke pieces engineered to combine ancient West African smithing prestige with rigorous Swiss refining parameters. Explore our curated lines of lasting wealth assets.
+            A hand-picked edit of gold accessories &mdash; chosen for shine, quality and the way they wear. Browse the categories and find the one that&rsquo;s yours.
           </p>
         </div>
 

@@ -6,26 +6,26 @@ import Link from 'next/link';
 const CATEGORIES = [
   {
     id: 'rings',
-    title: 'SIGNATURE INVEST RINGS',
-    price: 'FROM ₦450,000 NGN',
+    title: 'SIGNATURE GOLD RINGS',
+    price: 'SHOP RINGS',
     image: 'https://i.pinimg.com/736x/a4/c3/5e/a4c35eb64e16357b030f984f0dfaba09.jpg',
   },
   {
     id: 'bracelets',
-    title: 'BESPOKE CHAIN BRACELET',
-    price: 'FROM ₦950,000 NGN',
+    title: 'CHAIN BRACELETS',
+    price: 'SHOP BRACELETS',
     image: 'https://i.pinimg.com/736x/7b/d4/9a/7bd49abf106ccdd58678dd0b9a5876a6.jpg',
   },
   {
     id: 'earrings',
-    title: 'STATEMENT SHIELD HOOPS',
-    price: 'FROM ₦380,000 NGN',
+    title: 'STATEMENT HOOPS',
+    price: 'SHOP EARRINGS',
     image: 'https://i.pinimg.com/736x/2f/39/4d/2f394d20289fc6c99b26035e95ab82a4.jpg',
   },
   {
     id: 'necklaces',
-    title: 'LUXMINT ANCHOR NECKLACE',
-    price: 'FROM ₦850,000 NGN',
+    title: 'LAYERING NECKLACES',
+    price: 'SHOP NECKLACES',
     image: 'https://i.pinimg.com/1200x/05/35/3e/05353e841b8f9ebaa0ee3d5b4a4e04a5.jpg',
   }
 ];
@@ -38,13 +38,13 @@ export default function Offerings() {
         {/* Editorial Section Header */}
         <div className="max-w-[720px] mx-auto text-center mb-16 md:mb-24 px-4">
           <span className="block text-[9px] tracking-[0.3em] text-black uppercase mb-5 font-semibold">
-            WHAT WE OFFER
+            THE COLLECTION
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] text-lux-dark mb-4 font-normal tracking-tight">
-            Everything gold, crafted for your <i className="font-serif font-light text-black">lifestyle</i> and your legacy.
+            Gold for the <i className="font-serif font-light text-black">everyday</i>, and the unforgettable.
           </h2>
           <p className="text-black text-[14px] md:text-[15px] leading-relaxed font-light mt-4">
-            From gold chains, to necklace, pendants, rings.....
+            Chains, necklaces, pendants, rings, bracelets and earrings &mdash; each one hand-picked.
           </p>
         </div>
 
